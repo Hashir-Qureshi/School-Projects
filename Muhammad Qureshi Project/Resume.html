@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="MyStyles.css">
+<title>Resume</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="Animations.js"></script>
+</head>
+<body id="Resume" onload="slide('Name'); content();" class="Background">
+<div id="Header" class="Header" >
+<div id="Name" class="Name">
+Muhammad Qureshi
+</div>
+<div id="Menu" class="Menu">
+<button class="MenuButtons" onclick="location.href='Homepage.html';">Home</button>
+<button class="MenuButtons" onclick="location.href='Bio.html';">Bio</button>
+<button class="MenuButtons" onclick="location.href='Resume.html';">Resume</button>
+<button class="MenuButtons" onclick="location.href='Hobbies.html';">Hobbies</button>
+<button class="MenuButtons" onclick="location.href='Examples.html';">HTML Examples</button>
+</div>
+</div>
+
+<div id="Body" class="Body" >
+<div id="SidePanel" class="SidePanel">
+
+<div align="center">
+<h4>Download Links</h4>
+</br>
+<a href="Resume.pdf" download>PDF</a>
+</div >
+</br>
+</br>
+
+<div align="center">
+<a href="Resume.docx" download>Document</a>
+</div >
+
+
+
+</div>
+<div  style="width:84.89%; height:100%; float:left;" >
+<iframe src="Resume.pdf" width="99.7%" height="99%"> </iframe>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>:checked, :enabled, and :disabled Elements</title>
+<style type="text/css"> 
+input:checked {height:50px; width:50px;}
+input:enabled {background-color:green;}
+input:disabled {background-color:gray;}
+</style>
+</head>
+<body>
+<form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+Choos your favorite sport</br>
+<input type="checkbox" name="sport" value="Footbal" checked />Footbal
+<input type="checkbox" name="sport" value="Basketball"/>Basketball
+<input type="checkbox" name="sport" value="Soccer"/>Soccer
+</br></br>
+First Name: <input type="text" name="First Name"/>
+Company Name: <input type="text" name="Company Name" disabled>
+</form>
+</body>
+</html>
