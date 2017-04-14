@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="MyStyles.css">
+<title>HTML Examples</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="Animations.js"></script>
+</head>
+<body id="Examples" onload="slide('Name');" class="Background">
+<div id="Header" class="Header">
+<div id="Name" class="Name">
+Muhammad Qureshi
+</div>
+<div id="Menu" class="Menu">
+<button class="MenuButtons" onclick="location.href='Homepage.html';">Home</button>
+<button class="MenuButtons" onclick="location.href='Bio.html';">Bio</button>
+<button class="MenuButtons" onclick="location.href='Resume.html';">Resume</button>
+<button class="MenuButtons" onclick="location.href='Hobbies.html';">Hobbies</button>
+<button class="MenuButtons" onclick="location.href='Examples.html';">HTML Examples</button>
+</div>
+</div>
+<div id="Body" class="Body">
+<div id="Chapters" style="float:left; width:100%; height:100%; overflow:auto;">
+<div align="center" style="position:relative; top:9%;">
+
+<table style="text-align:center;">
+
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide2','#slide3','#slide4','#slide5','#slide6','#slide7','#slide8','#slide9','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide1');">Chapter #1</button> 
+
+	</td>
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide3','#slide4','#slide5','#slide6','#slide7','#slide8','#slide9','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide2');">Chapter #2</button>
+	</td>
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide4','#slide5','#slide6','#slide7','#slide8','#slide9','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide3');">Chapter #3</button>
+	</td>
+</table>
+<div id="slide1" class="Slides">
+<div id="Chapter1" ><ul><dl>
+
+<li><dt>Heading</dt><dd>Use all the Heading tags to display your heading.</dd>
+			<button class="HWbuttons" onclick="openDiv('Homework1code');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 1/homework 1.html');">Open Page</button></li>	
+			<div id="Homework1code" class="innerSlides" ><dd>
+&lthtml&gt</br>
+&lttitle&gtHomework #1 &lt/title&gt </br>
+&ltbody&gt</br>
+&lth1&gtThe most important headline&lt/h1&gt</br>
+&lth2&gtThe second most important headline &lt/h2&gt</br>
+&lth3&gtThe third most important headline &lt/h3&gt</br>
+&lth4&gtThe fourth most important headline &lt/h4&gt</br>
+&lth5&gtThe fifth most important headline &lt/h5&gt</br>
+&lth6&gtThe sixth most important headline &lt/h6&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+<li><dt>Nested</dt><dd>Illustrates the use of nested HTML Tags.</dd>
+			<button class="HWbuttons" onclick="openDiv('NestedCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 1/Nested.html');">Open Page</button></li>
+			<div id="NestedCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtNested Tags&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth1&gt&ltb&gt &lti&gtThis&lt/i&gt &ltsmall&gtis a&lt/small&gt &ltmark&gtnested &lti&gttag&lt/i&gt&lt/mark&gt&lt/b&gt&lt/h1&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+<li><dt>YellowParagraph</dt><dd>Displays a paragraph of text with a yellow background color.</dd>
+			<button class="HWbuttons" onclick="openDiv('YellowParagraphCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 1/YellowPargraph.html');">Open Page</button></li>
+			<div id="YellowParagraphCode" class="innerSlides" style="clear:left;"> <dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt &lttitle&gt Yellow Paragraph &lt/title&gt </br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth1&gtThis is a paragraph with a yellow background&lt/h1&gt</br>
+&ltp style="background-color:yellow"&gt</br>
+Yellow is the color between green and orange in the spectrum of visible light, the color of ripe lemons, sunflowers and gold.
+It is a primary color in subtractive color, used in color printing. According to surveys in Europe, Canada and the United States, 
+yellow is the color people most often associate with amusement, gentleness, and spontaneity, but also with duplicity, envy, 
+jealousy, avarice, and, in the U.S., with cowardice. It plays an important role in Asian culture, particularly in China, where it 
+is seen as the color of happiness, glory, wisdom, harmony and culture.
+&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>			
+</div>
+
+
+</dl></ul></div>
+</div>
+
+<div id="slide2" class="Slides">
+<div id="Chapter2" ><ul><dl>
+
+<li><dt>CenterImage</dt><dd>Centers the image at <i>http://www.websitedevelopmentbook.com/Chapter02/Car.jpg</i></dd>
+<button class="HWbuttons" onclick="openDiv('CenterImageCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 2/CenterImage.html');">Open Page</button></li>
+<div id="CenterImageCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtCentering an Image&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth1&gtThis image is centered&lt/h1&gt</br>
+&ltimg src="http://www.websitedevelopmentbook.com/Chapter02/Car.jpg" style="display:block; margin-left:auto; margin-right:auto"&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+<li><dt>ImageResizing</dt><dd>Uses the HTML &lt<b>img</b>&gt tag <b>height</b> and <b>width</b> attributes within an HTML file to display the following image sized at various percentages of the current browser window size: <i>http://www.websitedevelopmentbook.com/Chapter02/Flag.jpg<i></dd></li>
+<button class="HWbuttons" onclick="openDiv('ImageResizingCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 2/ImageResizing.html');">Open Page</button></li>
+<div id="ImageResizingCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtResizing Images&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth1&gtThis is 20% wide and at 20% height&lt/h1&gt</br>
+&ltimg src="http://www.websitedevelopmentbook.com/Chapter02/Flag.jpg" alt="Flag" width="20%" height="20%"&gt</br>
+&lth2&gtThis is 30% wide and at 30% height&lt/h2&gt</br>
+&ltimg src="http://www.websitedevelopmentbook.com/Chapter02/Flag.jpg" alt="Flag" width="30%" height="30%"&gt </br>
+&lth3&gtThis is 50% wide and at 50% height&lt/h3&gt</br>
+&ltimg src="http://www.websitedevelopmentbook.com/Chapter02/Flag.jpg" alt="Flag" width="50%" height="50%"&gt </br>
+&lt/body&gt	</br>
+&lt/html&gt
+</dd>
+</div>
+
+</dl></ul></div>
+
+</div>
+
+<div id="slide3" class="Slides">
+<div id="Chapter3" ><ul><dl>
+
+<li><dt>Text-Based Hyperlink</dt><dd>Uses an HTML &lt<b>a</b>&gt and &lt<b>/a</b>&gt anchor tag pair to create a text-based hyperlink to Jones &amp Bartlett Learning, at <i>http://www.jblearning.com</i></dd>
+<button class="HWbuttons" onclick="openDiv('Text-BasedHyperlinkCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 3/Ch3-1.html');">Open Page</button></li>
+<div id="Text-BasedHyperlinkCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtText-Based Hyperlink&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lta href="http://www.jblearning.com"&gt Jones & Bartlett Learning&lt/a&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+<li><dt>Mailto Attribute</dt><dd>Illustrates the use of the mailto attribute.</dd></li>
+<button class="HWbuttons" onclick="openDiv('MailtoAttributeCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 3/Ch3-4.html');">Open Page</button></li>
+<div id="MailtoAttributeCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtMailto Attribute&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lta href="mailto:qureshihashir@yahoo.com?subject=mailto test&ampbody=This is a test for the mailto attribute."&gt E-mail&lt/a&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+<li><dt>Link in a New Window</dt><dd>Opens a text-based hyperlink in a new window.</dd></li>
+<button class="HWbuttons" onclick="openDiv('LinkinaNewWindowCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 3/Ch3-5.html');">Open Page</button></li>
+<div id="LinkinaNewWindowCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtLink in a New Window&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lta href="http://www.jblearning.com" target="new"&gt Jones & Bartlett Learning&lt/a&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+<li><dt>In-Page Link</dt><dd>Illustrates the use of an in-page link.</dd></li>
+<button class="HWbuttons" onclick="openDiv('In-PageLinkCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 3/Ch3-6.html');">Open Page</button></li>
+<div id="In-PageLinkCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtIn-Page Link&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lta name="Top"&gt&lt/a&gt</br>
+&lta href="#Top"&gtTop&lt/a&gt</br>
+&lta href="#Bottom"&gtBottom&lt/a&gt&ltbr/&gt</br>
+This is the top of the Page.&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+1&ltbr/&gt</br>
+This is the Bottom of the page.&ltbr/&gt</br>
+&lta href="#Top"&gtTop&lt/a&gt</br>
+&lta href="#Bottom"&gtBottom&lt/a&gt</br>
+&lta name="Bottom"&gt&lt/a&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+<li><dt>Coordinates</dt><dd>Uses a grid to display 4 images. when clicked, these images open a different webpage based on the image that was clicked.</dd></li>
+<button class="HWbuttons" onclick="openDiv('CoordinatesCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 3/Coordinates.html');">Open Page</button></li>
+<div id="CoordinatesCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtCoordinates&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltimg src="Animals.jpg" usemap="#Animals"&gt</br>
+&ltmap name="Animals"&gt</br>
+&ltarea shape="rect" coords="1,1,200,131" href="https://en.wikipedia.org/wiki/Cat" target="new"&gt</br>
+&ltarea shape="rect" coords="201,1,400,131" href="https://en.wikipedia.org/wiki/Dog" target="new"&gt</br>
+&ltarea shape="rect" coords="1,132,200,262" href="https://en.wikipedia.org/wiki/Lion" target="new"&gt</br>
+&ltarea shape="rect" coords="201,132,400,262" href="https://en.wikipedia.org/wiki/Gray_wolf" target="new"&gt</br>
+&lt/map&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+</dl></ul></div>
+</div>
+
+<table style="text-align:center;">
+
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide5','#slide6','#slide7','#slide8','#slide9','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide4');">Chapter #4</button>
+	</td>
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide6','#slide7','#slide8','#slide9','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide5');">Chapter #5</button>
+	</td>
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide7','#slide8','#slide9','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide6');">Chapter #6</button>
+
+	</td>
+</table>
+
+<div id="slide4" class="Slides">
+<div id="Chapter4" ><ul><dl>
+
+<li><dt>Definition List</dt><dd>Uses the &lt<b>dl</b>&gt and &lt<b>/dl</b>&gt tag pair to create a definition list.</dd>
+<button class="HWbuttons" onclick="openDiv('DefinitionListcode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 4/DefinitionList.html');">Open Page</button></li>
+<div id="DefinitionListcode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtDefinition List&lt/title&gt</br>
+&lt/head&gt</br>
+&ltp&gtWeb Development Terms&lt/p&gt</br>
+&ltdl&gt</br>
+&ltdt&gtHTML&lt/dt&gt</br>
+&ltdd&gtHypertext Markup language used to format a Web page &lt/dd&gt</br>
+&ltdt&gtCSS&lt/dt&gt</br>
+&ltdd&gtCascading Style Sheets used to format page elements &lt/dd&gt</br>
+&ltdt&gtJavaScript&lt/dt&gt</br>
+&ltdd&gtA browser-based programming language for client-side programming &lt/dd&gt</br>
+&lt/dl&gt</br>
+&ltbody&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd></div>
+
+<li><dt>Graphic As A Bullet</dt><dd>A bulleted list with an image for a bullet point.</dd></li>
+<button class="HWbuttons" onclick="openDiv('GraphicAsABulletCode');"> Hide/Show Code</button><button class="HWbuttons" onclick="window.open('Chapter 4/GraphicAsABullet.html');">Open Page</button></li>
+<div id="GraphicAsABulletCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtGraphic as a Bullet&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth1&gtBulleted List&lt/h1&gt</br>
+&ltul style="list-style-image:url('bullet.jpg')"&gt</br>
+&ltli&gt Pandas&lt/li&gt</br>
+&ltli&gt Bears&lt/li&gt</br>
+&ltli&gt Panda Bears&lt/li&gt</br>
+&lt/ul&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+
+</dd>
+</div>
+
+<li><dt>Nested Lists</dt><dd>A list within a list.</dd></li>
+<button class="HWbuttons" onclick="openDiv('NestedListsCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 4/NestedLists.html');">Open Page</button></li>
+<div id="NestedListsCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtNested Lists&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltp&gtStates and Cities&lt/p&gt</br>
+&ltul&gt</br>
+	&ltli&gtArizona 
+		&ltul style="list-style-type:circle"&gt</br>
+			&ltli&gtPheonix&lt/li&gt</br>
+			&ltli&gtPrescott&lt/li&gt</br>
+			&ltli&gtTucson&lt/li&gt</br>
+		&lt/ul&gt</br>
+	&lt/li&gt</br>
+	
+	&ltli&gtUtah
+		&ltul style="list-style-type:circle"&gt</br>
+			&ltli&gtSalt Lake City&lt/li&gt</br>
+			&ltli&gtOrem&lt/li&gt</br>
+			&ltli&gtCedar City&lt/li&gt</br>
+		&lt/ul&gt</br>
+	&lt/li&gt</br>
+	
+		&ltli&gtWashington
+		&ltul style="list-style-type:circle"&gt</br>
+			&ltli&gtSeattle&lt/li&gt</br>
+			&ltli&gtTacoma&lt/li&gt</br>
+			&ltli&gtSpokane&lt/li&gt</br>
+		&lt/ul&gt</br>
+	&lt/li&gt</br>
+&lt/ul&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+</dl></ul></div>
+</div>
+
+<div id="slide5" class="Slides">
+<div id="Chapter5" ><ul><dl>
+
+<li><dt>Column Groups</dt><dd>Uses the &lt<b>colgroup</b>&gt and &lt<b>/colgroup</b>&gt and &lt<b>col</b>&gt &lt<b>/col</b>&gt tag pairs to style columns in a table.</dd></li>
+<button class="HWbuttons" onclick="openDiv('ColumnGroupsCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 5/ColumnGroups.html');">Open Page</button></li>
+<div id="ColumnGroupsCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtColumn Groups&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lttable border="1"&gt</br>
+&ltcolgroup&gt</br>
+&ltcol style="background:Orange"&gt&lt/col&gt</br>
+&ltcol style="background:yellow"&gt&lt/col&gt</br>
+&ltcol style="background:lightblue"&gt&lt/col&gt</br>
+&lt/colgroup&gt</br>
+&lttr&gt&lttd&gtOrange&lt/td&gt&lttd&gt Yellow&lt/td&gt&lttd&gtLight blue&lt/td&gt&lt/tr&gt</br>
+&lt/table&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Different Background Colors</dt><dd>Uses the &lt<b>thead</b>&gt &lt<b>tbody</b>&gt &lt<b>tfoot</b>&gt tags to style the background colors of the table sections.</dd></li>
+<button class="HWbuttons" onclick="openDiv('DifferentBackgroundColorsCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 5/DifferentBackgroundColors.html');">Open Page</button></li>
+<div id="DifferentBackgroundColorsCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtDifferent Background colors &lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lttable border="5" background-color="black"&gt</br>
+&ltthead style="text-align:center" &lttr&gt&ltth&gtHeader&lt/th&gt&lt/tr&gt&lt/thead&gt</br>
+&lttbody style="background: Orange; text-align:center" border-color="gray"&gt&lttr&gt&lttd&gtBody&lt/td&gt&lt/tr&gt&lt/tbody&gt</br>
+&lttfoot style="background: lime; text-align:left" border-color="gray"&gt&lttr&gt&lttd&gtFooter&lt/td&gt&lt/tr&gt&lt/tfoot&gt</br>
+&lt/table&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Nested Tables</dt><dd>Tables within a table.</dd></li>
+<button class="HWbuttons" onclick="openDiv('NestedTablesCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 5/NestedTables.html');">Open Page</button></li>
+<div id="NestedTablesCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtNested Tables&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lttable border="1"&gt</br>
+&lttr&gt&lttd&gtA</br>
+	&lt/td&gt</br>
+	
+	&lttd&gt</br>
+		&lttable&gt</br>
+			&lttr&gt</br>
+				&lttd&gtB</br>
+				&lt/td&gt</br>
+				
+				&lttd&gtC</br>
+				&lt/td&gt</br>
+			&lt/tr&gt</br>
+			
+			&lttr&gt</br>
+				&lttd&gtD</br>
+				&lt/td&gt</br>
+				
+				&lttd&gtE</br>
+				&lt/td&gt</br>
+			&lt/tr&gt</br>
+		&lt/table&gt</br>
+	&lt/td&gt</br>
+&lt/tr&gt</br>
+
+&lttr&gt</br>
+	&lttd colspan="2"&gtF</br>
+	&lt/td&gt</br>
+&lt/tr&gt</br>
+&lt/table&gt</br>
+
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Spacing and Padding</dt><dd>Uses the &lt<b>cellspacing</b>&gt and &lt<b>cellpadding</b>&gt attributes of a table to format two tables.</dd></li>
+<button class="HWbuttons" onclick="openDiv('SpacingandPaddingCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 5/SpacingAndPadding.html');">Open Page</button></li>
+<div id="SpacingandPaddingCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtPadding and Spacing&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth3&gtSpacing&lt/h3&gt</br>
+&lttable border="1" cellspacing="20"&gt</br>
+&lttr&gt&lttd&gtNew York&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gtPennsylvania&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gtWashington&lt/td&gt&lt/tr&gt</br>
+&lt/table&gt</br>
+&lth3&gtPadding&lt/h3&gt</br>
+&lttable border="1" cellpadding="20"&gt</br>
+&lttr&gt&lttd&gtNew York&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gtPennsylvania&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gtWashington&lt/td&gt&lt/tr&gt</br>
+&lt/table&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+</dl></ul></div>
+</div>
+
+<div id="slide6" class="Slides">
+<div id="Chapter6"><ul><dl>
+
+<li><dt>Pull Down List</dt><dd>Prompts the user for his/her favorite sport using a pull-down list.</dd></li>
+<button class="HWbuttons" onclick="openDiv('PullDownListCode');"> Hide/Show Code</button><button class="HWbuttons" onclick="window.open('Chapter 6/PullDownList.html');">Open Page</button></li>
+<div id="PullDownListCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtPull Down List&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltform action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post"&gt</br>
+What is your favorite sport? &ltselect name="FavoriteSport"&gt</br>
+							&ltoption&gtBasketball&lt/option&gt</br>
+							&ltoption&gtBaseball&lt/option&gt</br>
+							&ltoption&gtTennis&lt/option&gt</br>
+							&ltoption&gtFootball&lt/option&gt</br>
+							&ltoption&gtSoccer&lt/option&gt</br>
+							&ltoption&gtIce Hockey&lt/option&gt</br>
+							&ltoption&gtField Hockey&lt/option&gt</br>
+							&ltoption&gtRugby&lt/option&gt</br>
+							&ltoption&gtSwimming&lt/option&gt</br>
+							&ltoption&gtGaming&lt/option&gt</br>
+							&lt/select&gt</br>
+&ltinput type="submit" value="Click Here"/&gt</br>
+&lt/form&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Radio Buttons</dt><dd>Prompts the user for his/her favorite pet using radio buttons.</dd></li>
+<button class="HWbuttons" onclick="openDiv('RadioButtonsCode');"> Hide/Show Code</button><button class="HWbuttons" onclick="window.open('Chapter 6/RadioButtons.html');">Open Page</button></li>
+<div id="RadioButtonsCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtRadio Buttons&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltform action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post"&gt</br>
+What is your favorite type of pet?&ltbr/&gt</br>
+&ltinput type="radio" name="Pet" value="Dog"/&gtDog</br>
+&ltbr/&gt</br>
+&ltinput type="radio" name="pet" value="Cat"/&gtCat</br>
+&ltbr/&gt</br>
+&ltinput type="radio" name="Pet" value="Fish"/&gtFish</br>
+&ltbr/&gt</br>
+&ltinput type="radio" name="pet" value="Horse"/&gtHorse</br>
+&ltbr/&gt</br>
+&ltinput type="submit" value="Click Here"/&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>TextArea</dt><dd>Prompts the user for his/her name and lets the user paste his/her resume in a textarea.</dd></li>
+<button class="HWbuttons" onclick="openDiv('TextAreaCode');"> Hide/Show Code</button><button class="HWbuttons" onclick="window.open('Chapter 6/TextArea.html');">Open Page</button></li>
+<div id="TextAreaCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtText Area&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltform action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post"&gt</br>
+Username: &ltinput type="text" name="Username" /&gt</br>
+&ltbr/&gt&ltbr/&gt</br>
+Password: &ltinput type="password" name="UserPasword"/&gt</br>
+&ltbr/&gt&ltbr/&gt</br>
+
+Enter Your Resume: &lttextarea name="Resume" rows="10" cols="50"&gt</br>
+&lt/textarea&gt</br>
+&ltbr/&gt</br>
+&ltinput type="submit" value="Click Here"/&gt</br>
+&lt/form&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+
+</dl></ul></div>
+</div>
+
+<table style="text-align:center;">
+
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide6','#slide8','#slide9','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide7');">Chapter #7</button>
+	</td>
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide6','#slide7','#slide9','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide8');">Chapter #8</button>
+	</td>
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide6','#slide7','#slide8','#slide10','#slide11','#slide12','#slide13','#slide14'); openDiv('slide9');">Chapter #9</button>
+	</td>
+</table>
+
+<div id="slide7" class="Slides">
+<div id="Chapter7" ><ul><dl>
+
+<li><dt>About</dt><dd>Uses an external Style Sheet to style an about page.</dd></li>
+<button class="HWbuttons" onclick="openDiv('AboutCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 7/About.html');">Open Page</button></li>
+<div id="AboutCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtHome&lt/title&gt</br>
+&ltlink rel="stylesheet" type="text/css" href="Custom.css"/&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth1&gtThis is the About Page&lt/h1&gt</br>
+&ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl leo, tristique in erat id, maximus dapibus ligula. Proin scelerisque, diam nec facilisis malesuada, ex mi rutrum sapien, in efficitur ante magna non lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nec mi vehicula, lobortis ante quis, mollis nunc. Donec id fermentum sapien. In porta, dolor ac malesuada porta, urna nulla tincidunt tortor, sit amet placerat ante massa non lacus. Nunc ultricies leo id augue imperdiet convallis. Curabitur tempor metus et neque interdum, ut convallis nisl luctus. Ut condimentum arcu lacus, quis interdum eros porta a. Cras lectus sem, congue quis nibh vitae, condimentum sodales nunc. Etiam ullamcorper vulputate libero eu suscipit. Aliquam sed est nisi. Duis eu risus hendrerit, gravida ipsum et, lacinia justo. In vulputate lacus nulla, in tempor neque condimentum id. Cras bibendum a tortor vitae imperdiet. Donec porta dui et efficitur malesuada.&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+</dd>
+</div>
+
+<li><dt>Embedded and Inline Styles</dt><dd>Uses an Embedded and an Inline style to style two paragraphs.</dd></li>
+<button class="HWbuttons" onclick="openDiv('EmbeddedandInlineCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 7/EmbeddedAndInline.html');">Open Page</button></li>
+<div id="EmbeddedandInlineCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtEmbedded and Inline&lt/title&gt</br>
+&ltstyle type="text/css"&gt</br>
+p {color:red; font-style:italic; font-size:12px;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl leo, tristique in erat id, maximus dapibus ligula. Proin scelerisque, diam nec facilisis malesuada, ex mi rutrum sapien, in efficitur ante magna non lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nec mi vehicula, lobortis ante quis, mollis nunc. Donec id fermentum sapien. In porta, dolor ac malesuada porta, urna nulla tincidunt tortor, sit amet placerat ante massa non lacus. Nunc ultricies leo id augue imperdiet convallis. Curabitur tempor metus et neque interdum, ut convallis nisl luctus. Ut condimentum arcu lacus, quis interdum eros porta a. Cras lectus sem, congue quis nibh vitae, condimentum sodales nunc. Etiam ullamcorper vulputate libero eu suscipit. Aliquam sed est nisi. Duis eu risus hendrerit, gravida ipsum et, lacinia justo. In vulputate lacus nulla, in tempor neque condimentum id. Cras bibendum a tortor vitae imperdiet. Donec porta dui et efficitur malesuada.&lt/p&gt</br>
+&ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl leo, tristique in erat id, maximus dapibus ligula. Proin scelerisque, diam nec facilisis malesuada, ex mi rutrum sapien, in efficitur ante magna non lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nec mi vehicula, lobortis ante quis, mollis nunc. Donec id fermentum sapien. In porta, dolor ac malesuada porta, urna nulla tincidunt tortor, sit amet placerat ante massa non lacus. Nunc ultricies leo id augue imperdiet convallis. Curabitur tempor metus et neque interdum, ut convallis nisl luctus. Ut condimentum arcu lacus, quis interdum eros porta a. Cras lectus sem, congue quis nibh vitae, condimentum sodales nunc. Etiam ullamcorper vulputate libero eu suscipit. Aliquam sed est nisi. Duis eu risus hendrerit, gravida ipsum et, lacinia justo. In vulputate lacus nulla, in tempor neque condimentum id. Cras bibendum a tortor vitae imperdiet. Donec porta dui et efficitur malesuada.&lt/p&gt</br>
+&ltp style="font-size:14px; color:blue;"&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl leo, tristique in erat id, maximus dapibus ligula. Proin scelerisque, diam nec facilisis malesuada, ex mi rutrum sapien, in efficitur ante magna non lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nec mi vehicula, lobortis ante quis, mollis nunc. Donec id fermentum sapien. In porta, dolor ac malesuada porta, urna nulla tincidunt tortor, sit amet placerat ante massa non lacus. Nunc ultricies leo id augue imperdiet convallis. Curabitur tempor metus et neque interdum, ut convallis nisl luctus. Ut condimentum arcu lacus, quis interdum eros porta a. Cras lectus sem, congue quis nibh vitae, condimentum sodales nunc. Etiam ullamcorper vulputate libero eu suscipit. Aliquam sed est nisi. Duis eu risus hendrerit, gravida ipsum et, lacinia justo. In vulputate lacus nulla, in tempor neque condimentum id. Cras bibendum a tortor vitae imperdiet. Donec porta dui et efficitur malesuada.&lt/p&gt</br>
+
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Home</dt><dd>A home page that uses an extenal style sheet.</dd></li>
+<button class="HWbuttons" onclick="openDiv('HomeCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 7/Home.html');">Open Page</button></li>
+<div id="HomeCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtHome&lt/title&gt</br>
+&ltlink rel="stylesheet" type="text/css" href="Custom.css"/&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth1&gtThis is the Home Page&lt/h1&gt</br>
+&ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl leo, tristique in erat id, maximus dapibus ligula. Proin scelerisque, diam nec facilisis malesuada, ex mi rutrum sapien, in efficitur ante magna non lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nec mi vehicula, lobortis ante quis, mollis nunc. Donec id fermentum sapien. In porta, dolor ac malesuada porta, urna nulla tincidunt tortor, sit amet placerat ante massa non lacus. Nunc ultricies leo id augue imperdiet convallis. Curabitur tempor metus et neque interdum, ut convallis nisl luctus. Ut condimentum arcu lacus, quis interdum eros porta a. Cras lectus sem, congue quis nibh vitae, condimentum sodales nunc. Etiam ullamcorper vulputate libero eu suscipit. Aliquam sed est nisi. Duis eu risus hendrerit, gravida ipsum et, lacinia justo. In vulputate lacus nulla, in tempor neque condimentum id. Cras bibendum a tortor vitae imperdiet. Donec porta dui et efficitur malesuada.&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Modified Home</dt><dd>A modified version of the Home page that uses an inline style on an additional header tag.</dd></li>
+<button class="HWbuttons" onclick="openDiv('ModifiedHomeCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 7/ModifiedHome.html');">Open Page</button></li>
+<div id="ModifiedHomeCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtModified Home&lt/title&gt</br>
+&ltlink rel="stylesheet" type="text/css" href="Custom.css"/&gt</br>
+&ltstyle type="text/css"&gt</br>
+h1 {color:orange;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lth1&gtThis is the Modified Home Page&lt/h1&gt</br>
+&lth1 style="color:white"&gtThis is an inline style&lt/h1&gt</br>
+&ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl leo, tristique in erat id, maximus dapibus ligula. Proin scelerisque, diam nec facilisis malesuada, ex mi rutrum sapien, in efficitur ante magna non lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nec mi vehicula, lobortis ante quis, mollis nunc. Donec id fermentum sapien. In porta, dolor ac malesuada porta, urna nulla tincidunt tortor, sit amet placerat ante massa non lacus. Nunc ultricies leo id augue imperdiet convallis. Curabitur tempor metus et neque interdum, ut convallis nisl luctus. Ut condimentum arcu lacus, quis interdum eros porta a. Cras lectus sem, congue quis nibh vitae, condimentum sodales nunc. Etiam ullamcorper vulputate libero eu suscipit. Aliquam sed est nisi. Duis eu risus hendrerit, gravida ipsum et, lacinia justo. In vulputate lacus nulla, in tempor neque condimentum id. Cras bibendum a tortor vitae imperdiet. Donec porta dui et efficitur malesuada.&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Custom Style Sheet</dt><dd>A Custom CSS that is used for the web pages in this chapter</dd></li>
+<button class="HWbuttons" onclick="openDiv('CustomCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 7/Custom.css');">Open Page</button></li>
+<div id="CustomCode" class="innerSlides" style="clear:left;"><dd>
+body {background-color:blue;}</br>
+h1 {color:yellow;}</br>
+p {color:white;}
+</dd>
+</div>
+
+
+</dl></ul></div>
+</div>
+
+
+
+
+<div id="slide8" class="Slides">
+<div id="Chapter8" ><ul><dl>
+
+<li><dt>Checked/Enabled/Disabled Elements</dt><dd>Uses Checked, Enabled, Disabled Psuedo Classes in a form.</dd></li>
+<button class="HWbuttons" onclick="openDiv('CheckedEnabledDisabledElementsCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/checked_enabled_disabled_elements.html');">Open Page</button></li>
+<div id="CheckedEnabledDisabledElementsCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gt:checked, :enabled, and :disabled Elements&lt/title&gt</br>
+&ltstyle type="text/css"&gt </br>
+input:checked {height:50px; width:50px;}</br>
+input:enabled {background-color:green;}</br>
+input:disabled {background-color:gray;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltform action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post"&gt</br>
+Choos your favorite sport&lt/br&gt</br>
+&ltinput type="checkbox" name="sport" value="Footbal" checked /&gtFootbal</br>
+&ltinput type="checkbox" name="sport" value="Basketball"/&gtBasketball</br>
+&ltinput type="checkbox" name="sport" value="Soccer"/&gtSoccer</br>
+&lt/br&gt&lt/br&gt</br>
+First Name: &ltinput type="text" name="First Name"/&gt</br>
+Company Name: &ltinput type="text" name="Company Name" disabled&gt</br>
+&lt/form&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+
+<li><dt>After and Before Elements</dt><dd>Uses The After and Before Psuedo Elements to format a paragraph.</dd></li>
+<button class="HWbuttons" onclick="openDiv('AfterandBeforeElementsCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/after_and_before_elements.html');">Open Page</button></li>
+<div id="AfterandBeforeElementsCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gt:after and :before Elements&lt/title&gt</br>
+&ltstyle type="text/css"&gt </br>
+p:after {content:" End of paragraph"; font-weight:bold; color:blue;}</br>
+p:before {content:"Begining of Paragraph "; font-weight:bold; color:blue;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dolor ex, imperdiet vel lorem nec, dictum egestas magna. Ut vitae posuere dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut tempor lacus ac est semper, at tristique turpis tincidunt. Curabitur eu mauris erat. In pulvinar sit amet risus eget rhoncus. Duis ac lacus vitae dolor tincidunt rutrum. Aenean mattis dictum tempus. Morbi ligula ipsum, convallis quis augue quis, rutrum sollicitudin ex.&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>BigBlue</dt><dd>Uses the BigBlue CSS class to style a paragraph.</dd></li>
+<button class="HWbuttons" onclick="openDiv('BigBlueCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/BigBlue.html');">Open Page</button></li>
+<div id="BigBlueCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtBigBlue&lt/title&gt</br>
+&ltstyle type="text/css"&gt</br>
+.BigBlue {font-size: 20px; color:blue;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltp class="BigBlue"&gtThis is Big Blue&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>YellowBackground</dt><dd>Uses the YellowBackground class to change the background of the page to yellow.</dd></li>
+<button class="HWbuttons" onclick="openDiv('YellowBackgroundCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/YellowBackground.html');">Open Page</button></li>
+<div id="YellowBackgroundCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtYellow Background&lt/title&gt</br>
+&ltstyle type="text/css"&gt</br>
+.YellowBackground {background-color:yellow;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody class="YellowBackground"&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>BigBlue and YellowBackground</dt><dd>Uses the BigBlue and YellowBackground classes on the same element.</dd></li>
+<button class="HWbuttons" onclick="openDiv('BigBlueandYellowBackgroundCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/BigBlue_And_YellowBackground.html');">Open Page</button></li>
+<div id="BigBlueandYellowBackgroundCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtBigBlue and Yellow Background&lt/title&gt</br>
+&ltstyle type="text/css"&gt</br>
+.YellowBackground {background-color:yellow;}</br>
+.BigBlue {font-size: 20px; color:blue;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltol class="BigBlue YellowBackground"&gt</br>
+&ltli&gtThis is an ordered list&lt/li&gt</br>
+&ltli&gtThat uses both the BigBlue and YellowBackground classes.&lt/li&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>First-Letter and Firts-Line Elements</dt><dd>Uses the first-letter and first-line Psuedo Elements to format the first letter and line of a paragraph.</dd></li>
+<button class="HWbuttons" onclick="openDiv('First-LetterandFirts-LineCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/firts-letter_first-line.html');">Open Page</button></li>
+<div id="First-LetterandFirts-LineCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gt:first-letter and :first-line Elements&lt/title&gt</br>
+&ltstyle type="text/css"&gt </br>
+p:first-letter {font-size: 200%;}</br>
+p:first-line {font-weight:bold;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dolor ex, imperdiet vel lorem nec, dictum egestas magna. Ut vitae posuere dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut tempor lacus ac est semper, at tristique turpis tincidunt. Curabitur eu mauris erat. In pulvinar sit amet risus eget rhoncus. Duis ac lacus vitae dolor tincidunt rutrum. Aenean mattis dictum tempus. Morbi ligula ipsum, convallis quis augue quis, rutrum sollicitudin ex.&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Paragraph Specific Styles</dt><dd>Modifies the BigBlue class specifically for paragraphs.</dd></li>
+<button class="HWbuttons" onclick="openDiv('ParagraphSpecificCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/Paragraph-Specific.html');">Open Page</button></li>
+<div id="ParagraphSpecificCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtParagraph Specific Styles&lt/title&gt</br>
+&ltstyle type="text/css"&gt</br>
+.BigBlue {font-size: 20px; color:blue;}</br>
+p.BigBlue {font-style:Arial;}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltp class="BigBlue"&gt This uses the paragraph-specific and the standard BigBlue classes.&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Table 8-1</dt><dd>Recreation of table 8-1 in this chapter</dd></li>
+<button class="HWbuttons" onclick="openDiv('Table8-1Code');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/Table8-1.html');">Open Page</button></li>
+<div id="Table8-1Code" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtTable 8-1&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lttable border="2" rules="rows" style="text-align:left"&gt</br>
+&ltthead style="background-color:black; color:white;"&gt&lttr&gt&ltth colspan="2"&gtTABLE 8-1&emsp;CSS STATE-BASED PSEUDO CLASSES&lt/th&gt&lt/tr&gt</br>
+&lt/thead&gt</br>
+&lttbody&gt</br>
+&lttr style="font-style:bold"&gt&lttd&gtPseudo Class&emsp;&emsp;&emsp;&emsp;&lt/td&gt&lttd&gtDescription&lt/td&gt&lt/tr&gt</br>
+&lttr &gt&lttd&gt:active&lt/td&gt&lttd&gtApplies to a selected link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:focus&lt/td&gt&lttd&gtForm element that has the keyboard focus&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:hover&lt/td&gt&lttd&gtApplies to a link over which the mouse is hovering&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:link&lt/td&gt&lttd&gtApplies to an unvisited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:visited&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lt/tbody&gt</br>
+&lt/table&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Table 8-2</dt><dd>Recreation of table 8-2 in this chapter</dd></li>
+<button class="HWbuttons" onclick="openDiv('Table8-2Code');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/Table8-2.html');">Open Page</button></li>
+<div id="Table8-2Code" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtTable 8-2&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lttable border="2" rules="rows" style="text-align:left"&gt</br>
+&ltthead style="background-color:black; color:white;"&gt&lttr&gt&ltth colspan="2"&gtTABLE 8-2&emsp;CSS POSITIONED-BASED PSEUDO CLASSES&lt/th&gt&lt/tr&gt</br>
+&lt/thead&gt</br>
+&lttbody&gt</br>
+&lttr style="font-style:bold"&gt&lttd&gtPseudo Class&emsp;&emsp;&emsp;&emsp;&lt/td&gt&lttd&gtDescription&lt/td&gt&lt/tr&gt</br>
+&lttr &gt&lttd&gt:checked&lt/td&gt&lttd&gtSelects every checked item-such as selected checkboxes within a form&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:disabled&lt/td&gt&lttd&gtSelects the disabled elements-such as selected checkboxes within a form&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:empty&lt/td&gt&lttd&gtSelects an empty element of the selector type&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:firt-child&lt/td&gt&lttd&gtApplies to an unvisited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:first-of-type&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:enabled&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:last-child&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:last-of-type&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:not(selector)&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:nth-child(n)&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:nth-last-child(n)&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:only-of-type&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:root&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:selection&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:target&lt/td&gt&lttd&gtApplies to a visited link&lt/td&gt&lt/tr&gt</br>
+&lt/tbody&gt</br>
+&lt/table&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Table 8-3</dt><dd>Recreation of table 8-3 in this chapter</dd></li>
+<button class="HWbuttons" onclick="openDiv('Table8-3Code');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 8/Table8-3.html');">Open Page</button></li>
+<div id="Table8-3Code" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtTable 8-3&lt/title&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lttable border="2" rules="rows" style="text-align:left"&gt</br>
+&ltthead style="background-color:black; color:white;"&gt&lttr&gt&ltth colspan="2"&gtTABLE 8-1&emsp;CSS PSUEDO ELEMENTS&lt/th&gt&lt/tr&gt</br>
+&lt/thead&gt</br>
+&lttbody&gt</br>
+&lttr&gt&lttd&gt&ltb&gtPseudo Class&emsp;&emsp;&emsp;&emsp;&lt/b&gt&lt/td&gt&lttd&gt&ltb&gtDescription&lt/b&gt&lt/td&gt&lt/tr&gt</br>
+&lttr &gt&lttd&gt:first-letter&lt/td&gt&lttd&gtApplies to the first letter of a block element, such as a paragraph.&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:first-line&lt/td&gt&lttd&gtApplies to the first line of a block element, such as a paragraph.&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:after&lt/td&gt&lttd&gtApplies to the space that immediately follows an element.&lt/td&gt&lt/tr&gt</br>
+&lttr&gt&lttd&gt:before&lt/td&gt&lttd&gtApplies to the space that immediately precedes an element.&lt/td&gt&lt/tr&gt</br>
+&lt/tbody&gt</br>
+&lt/table&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+
+
+<dl></ul></div>
+</div>
+
+<div id="slide9" class="Slides">
+<div id="Chapter9" ><ul><dl>
+
+<li><dt>Stacking Image and Div</dt><dd>Uses Divisions to stack an image over a division.</dd></li>
+<button class="HWbuttons" onclick="openDiv('StackingImageAndDivCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 9/StackingImageAndDiv.html');">Open Page</button></li>
+<div id="StackingImageAndDivCode" class="innerSlides" style="clear:left;"><dd>
+&ltdoctype html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&ltstyle type="text/css"&gt</br>
+.Image {width:200; height:200; position:absolute; top:100; left:100; z-index=0;}</br>
+.text {background-color:black; color:white; width:200; height:200; position absolute; top:200; left:250; z-index=1}</br>
+&lt/style&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltdiv class= "Image"&gt &ltimg src="http://WebSiteDevelopmentBook.com/Chapter09/wine.jpg"/&gt &lt/div&gt</br>
+&ltdiv class= "text"&gt &ltp&gt Stacking an image over a Div.&lt/p&gt &lt/div&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Colored Columns</dt><dd>Uses Divisions to create columns with diffeent background colors that change size as the window resizes.</dd></li>
+<button class="HWbuttons" onclick="openDiv('ColoredColumnsCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 9/ColoredColumns.html');">Open Page</button></li>
+<div id="ColoredColumnsCode" class="innerSlides" style="clear:left;"><dd>
+&ltDOCTYPE! html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&ltstyle type="text/css"&gt </br>
+
+.Start { background-color:black; width:30%; height:30%; position:absolute;left:0%; top:0%; } </br>
+.Middle { background-color:green; width:30%; height:30%; position:absolute;left:30%; top:0%; } </br>
+.End { background-color:yellow; width:30%; height:30%; position:absolute;left:60%; top:0%; } </br>
+
+.pad { margin: 0px 10px 10px 10px; }  </br>
+
+&lt/style&gt</br>
+&lt/head&gt</br>
+&lthtml&gt</br>
+&ltbody&gt</br>
+
+&ltdiv class="Start"&gt&ltp class="pad"&gtBlack&lt/P&gt&lt/div&gt</br>
+
+&ltdiv class="Middle"&gt&ltp class="pad"&gtGreen&lt/p&gt&lt/div&gt</br>
+
+&ltdiv class="End"&gt&ltp class="pad"&gtYellow&lt/div&gt</br>
+
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+
+</dl></ul></div>
+</div>
+
+<table style="text-align:center;">
+
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide6','#slide7','#slide8','#slide9','#slide11','#slide12','#slide13','#slide14'); openDiv('slide10');">Chapter #10</button>
+	</td>
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide6','#slide7','#slide8','#slide9','#slide10','#slide12','#slide13','#slide14'); openDiv('slide11');">Chapter #11</button>
+	</td>
+	<td class="Space"><button class="ChapButtons" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide6','#slide7','#slide8','#slide9','#slide10','#slide11','#slide13','#slide14'); openDiv('slide12');">Chapter #12</button>
+	</td>
+</table>
+
+<div id="slide10" class="Slides">
+<div id="Chapter10" ><ul><dl>
+
+<li><dt>Alphabet</dt><dd>Uses the alert function in JavaScript to display every letter of the alphabet.</dd></li>
+<button class="HWbuttons" onclick="openDiv('AlphabetCode');"> Hide/Show Code</button><button class="HWbuttons" onclick="window.open('Chapter 10/Aplhapet.html');">Open Page</button></li>
+<div id="AlphabetCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtAlphabet&lt/title&gt</br>
+&ltscript&gt</br>
+var Alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",]</br>
+
+for(var i=0; i&lt26;i++){</br>
+	alert(Alphabet[i]);</br>
+}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Date and Time</dt><dd>Creates a function that uses an ibject of the Date class to display the current date and time.</dd></li>
+<button class="HWbuttons" onclick="openDiv('DateAndTimeCode');"> Hide/Show Code</button><button class="HWbuttons" onclick="window.open('Chapter 10/DateAndTime.html');">Open Page</button></li>
+<div id="DateAndTimeCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtDate and Time&lt/title&gt</br>
+&ltscript&gt</br>
+
+function ShowDateAndTime(){</br>
+var DateAndTime = new Date();</br>
+alert(DateAndTime.toString());</br>
+}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody onload = "ShowDateAndTime()"&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Dog</dt><dd>Creates a Dog object with the Name, Age, and Breed properties.</dd></li>
+<button class="HWbuttons" onclick="openDiv('DogCode');"> Hide/Show Code</button><button class="HWbuttons" onclick="window.open('Chapter 10/Dog.html');">Open Page</button></li>
+<div id="DogCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtDog&lt/title&gt</br>
+&ltscript&gt </br>
+ function Dog(Name, Age, Breed){</br>
+	this.Name = Name;</br>
+	this.Age = Age;</br>
+	this.Breed = Breed;</br>
+ }</br>
+
+ var Chester = new Dog("Chester", 7, "German Shepard");</br>
+ alert(Chester.Name);</br>
+ alert(Chester.Age);</br>
+ alert(Chester.Breed);</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Favorite Sites</dt><dd>Stores 3 sites in an array and outputs them in an alert.</dd></li>
+<button class="HWbuttons" onclick="openDiv('FavoriteSitesCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 10/FavoriteSites.html');">Open Page</button></li>
+<div id="FavoriteSitesCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtFavorite Sites&lt/title&gt</br>
+&ltscript&gt</br>
+var Sites = ["www.viki.com","www.youtube.com","www.google.com"];</br>
+alert("My Favorite Sites are...");</br>
+for(var i=0; i&lt3;i++){</br>
+	alert(Sites[i]);</br>
+}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Grades</dt><dd>Uses IF statements to determine the letter grade from a number input.</dd></li>
+<button class="HWbuttons" onclick="openDiv('GradesCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 10/Grades.html');">Open Page</button></li>
+<div id="GradesCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtGrades&lt/title&gt</br>
+&ltscript&gt</br>
+var TestScore = prompt("What Grade did you get?");</br>
+
+if(90 &lt= TestScore)</br>
+	alert("You got an A!");</br>
+	else if(80 &lt= TestScore && TestScore &lt= 89)</br>
+			alert("You got a B!");</br>
+			else if(70 &lt= TestScore && TestScore &lt= 79)</br>
+					alert("You got a C!");</br>
+					else if(60 &lt= TestScore && TestScore &lt= 69)</br>
+							alert("You got a D!");</br>
+							else </br>
+								alert("You got an F!")</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+</dl></ul></div>
+</div>
+
+<div id="slide11" class="Slides">
+<div id="Chapter11" ><ul><dl>
+
+<li><dt>Changing Paragraph Text</dt><dd>Uses onmouseover and onmouseout events to change the text and background color of a paragraph.</dd></li>
+<button class="HWbuttons" onclick="openDiv('ChangingParagraphTextCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 11/ChangingParagraphText.html');">Open Page</button></li>
+<div id="ChangingParagraphTextCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtChanging Paragraph Text&lt/title&gt</br>
+&ltscript&gt</br>
+function whiteText(){</br>
+	var paragraph = document.getElementById("myParagraph");</br>
+	paragraph.style.color = 'white';</br>
+	
+	var body = document.getElementById("myBody");</br>
+	body.style.background="blue"</br>
+	
+	}</br>
+function blueText(){</br>
+	var paragraph = document.getElementById("myParagraph");</br>
+	paragraph.style.color = 'blue';</br>
+	
+	var body = document.getElementById("myBody");</br>
+	body.style.background="white"</br>
+	
+	
+	}</br>
+
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody id="myBody" style="background:blue;"&gt</br>
+&ltp id="myParagraph" style="color: white; " onmouseover="blueText()" onmouseout="whiteText()"&gtNam non ipsum sit amet ligula tincidunt vestibulum porttitor eget nulla. Praesent ac condimentum odio. Sed eu convallis lacus. Morbi vel vulputate sem. Suspendisse ullamcorper aliquam dolor, id dignissim ligula blandit id. Aliquam eu dictum diam, et fringilla neque. Sed diam leo, imperdiet vel nibh et, sodales gravida massa. Donec in euismod sapien. Nunc mollis odio at enim egestas ultricies. Integer ligula arcu, molestie euismod interdum in, cursus sollicitudin lacus. Aliquam placerat congue velit, ac commodo sem. Nulla turpis augue, hendrerit vel justo et, imperdiet euismod augue. Praesent augue libero, placerat sollicitudin luctus at, rutrum ut quam.&lt/p&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>History Object</dt><dd>Uses the history object to go back to the previous page in the user's history, when the page loads.</dd></li>
+<button class="HWbuttons" onclick="openDiv('HistoryObjectCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 11/HistoryObject.html');">Open Page</button></li>
+<div id="HistoryObjectCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtHistory Object&lt/title&gt</br>
+&ltscript&gt</br>
+function goBack(){</br>
+	history.back();</br>
+	}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody onload="goBack()"&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Navigator Object</dt><dd>Uses the document's Navigator object to diplay the name of the browser.</dd></li>
+<button class="HWbuttons" onclick="openDiv('NavigatorObjectCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 11/NavigatorObject.html');">Open Page</button></li>
+<div id="NavigatorObjectCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtNavigator Object&lt/title&gt</br>
+&ltscript&gt</br>
+document.writeln(navigator.appName);</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+
+</dd>
+</div>
+
+<li><dt>Swapping Contents</dt><dd></dd></li>
+<button class="HWbuttons" onclick="openDiv('SwappingContentsCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 11/SwappingContents.html');">Open Page</button></li>
+<div id="SwappingContentsCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtSwapping Contents&lt/title&gt</br>
+&ltscript&gt</br>
+function swap(){</br>
+	var firstParagraph = document.getElementById("firstParagraph");</br>
+	var secondParagraph = document.getElementById("secondParagraph");</br>
+	
+	var temp = firstParagraph.innerHTML;</br>
+	firstParagraph.innerHTML = secondParagraph.innerHTML;</br>
+	secondParagraph.innerHTML = temp;</br>
+	}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltp id="firstParagraph"&gtFirst Paragraph&lt/p&gt</br>
+&ltp id="secondParagraph"&gtSecond Paragraph&lt/p&gt</br>
+&ltbutton onclick="swap()"&gtSwap&lt/button&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+</dl></ul></div>
+</div>
+
+<div id="slide12" class="Slides">
+<div id="Chapter12" ><ul><dl>
+
+<li><dt>Changing Images</dt><dd>Changes the image being displayed after 5 seconds.</dd></li>
+<button class="HWbuttons" onclick="openDiv('ChangingImagesCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 12/ChangingImages.html');">Open Page</button></li>
+<div id="ChangingImagesCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtChanging Images&lt/title&gt</br>
+&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt&lt/script&gt</br>
+&ltscript&gt</br>
+var i = 0;</br>
+var images = ['&ltimg src="http://www.websitedevelopmentbook.com/chapter12/wine.jpg"/&gt', </br>
+			  '&ltimg src="http://www.websitedevelopmentbook.com/chapter12/cigar.jpg"/&gt',</br>
+			  '&ltimg src="http://www.websitedevelopmentbook.com/chapter12/pizza.jpg"/&gt',</br>
+			  '&ltimg src="http://www.websitedevelopmentbook.com/chapter12/pasta.jpg"/&gt',</br>
+			  '&ltimg src="http://www.websitedevelopmentbook.com/chapter12/dessert.jpg"/&gt',]</br>
+var imageTimer;</br>
+function ChangeImages(Division){</br>
+	if(i==0)</br>
+		imageTimer = setInterval(function() {ChangeImages(Division)}, 5000)</br>
+		
+	if(i&ltimages.length){</br>
+		$(Division).html(images[i])</br>
+		i=i+1;</br>
+		}</br>
+		else i=0;</br>
+	
+	}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody onload="ChangeImages('#myDiv')"&gt</br>
+&ltdiv id="myDiv" style="width:1200; height:400"&gt&lt/div&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Expanding Image</dt><dd>Expands an image when the mouse goes over it and shrinks the image when the mouse exits it.</dd></li>
+<button class="HWbuttons" onclick="openDiv('ExpandingImageCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 12/ExpandingImage.html');">Open Page</button></li>
+<div id="ExpandingImageCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtExpanding an Image&lt/title&gt</br>
+&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt&lt/script&gt</br>
+&ltscript&gt</br>
+
+
+function Expand(image){</br>
+	image = '#'+image;</br>
+	$(image).css("width", "400px", "height", "400px");</br>
+	}</br>
+function normalize(image){</br>
+	image = '#'+image;</br>
+	$(image).css("width", "200px", "height", "200px");	</br>
+	}</br>
+
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+&ltimg id="image" onmouseover="Expand('image')" onmouseout="normalize('image')" src ="http://www.websitedevelopmentbook.com/chapter12/dog.jpg" </br>
+width="200px" height="200px" /&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Sliding Photo</dt><dd>Slides an image horizontaly across the screen infinitely.</dd></li>
+<button class="HWbuttons" onclick="openDiv('SlidingPhotoCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 12/SlidingPhoto.html');">Open Page</button></li>
+<div id="SlidingPhotoCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtSliding Photo&lt/title&gt</br>
+&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt&lt/script&gt</br>
+&ltscript&gt</br>
+function slide(image){</br>
+	$(image).animate({left:'700px'}, 3000, function () {slideBack(image)});</br>
+	}</br>
+
+function slideBack(image){</br>
+	$(image).animate({left:'10px'}, 3000, function () {slide(image)});</br>
+	}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody onload="slide('#image')"&gt</br>
+&ltimg id="image" style="left:10px; position:absolute;" src="http://www.websitedevelopmentbook.com/chapter12/dog.jpg"/&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+</dl></ul></div>
+</div>
+
+<table style="text-align:center;">
+<tr >
+	<td class="Space"><button class="ChapButtons" style="margin-left:33%;" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide6','#slide7','#slide8','#slide9','#slide10','#slide11','#slide12','#slide14'); openDiv('slide13');">Chapter #13</button>
+	</td>
+	<td class="Space"><button class="ChapButtons" style="margin-left:-36%;" onclick="closeDivs('#slide1','#slide2','#slide3','#slide4','#slide5','#slide6','#slide7','#slide8','#slide9','#slide10','#slide11','#slide12','#slide13'); openDiv('slide14');">Chapter #14</button>
+	</td>
+</tr>
+</table>
+<div id="slide13" class="Slides">
+<div id="Chapter13" ><ul><dl>
+
+<li><dt>AJAX 3 Divisions</dt><dd>Uses AJAX to contact a server and replace the contents of a div with the response from the server.</dd></li>
+<button class="HWbuttons" onclick="openDiv('AJAX3DivisionsCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 13/AJAX3Divisions.html');">Open Page</button></li>
+<div id="AJAX3DivisionsCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&ltscript&gt</br>
+function loadDoc(Division) {</br>
+  var xhttp = new XMLHttpRequest();</br>
+  xhttp.onreadystatechange = function() {</br>
+    if (this.readyState == 4 && this.status == 200) {</br>
+      document.getElementById(Division).innerHTML =</br>
+      this.responseText;</br>
+    }</br>
+  };</br>
+  xhttp.open("GET", "http://www.w3schools.com/js/ajax_info.txt", true);</br>
+  xhttp.send();</br>
+}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody&gt</br>
+
+&ltdiv id="Angry"&gt</br>
+&lth1&gtAngry&lt/h1&gt</br>
+&ltbutton type="button" onclick="loadDoc('Angry')"&gtChange Content&lt/button&gt</br>
+&lt/div&gt</br>
+
+&ltdiv id="Happy"&gt</br>
+&lth1&gtHappy&lt/h1&gt</br>
+&ltbutton type="button" onclick="loadDoc('Happy')"&gtChange Content&lt/button&gt</br>
+&lt/div&gt</br>
+
+&ltdiv id="Sad"&gt</br>
+&lth1&gtSad&lt/h1&gt</br>
+&ltbutton type="button" onclick="loadDoc('Sad')"&gtChange Content&lt/button&gt</br>
+
+&lt/div&gt</br>
+
+&lt/body&gt</br>
+&lt/html&gt
+
+
+</dd>
+</div>
+
+</dl></ul></div>
+</div>
+
+<div id="slide14" class="Slides">
+<div id="Chapter14" ><ul><dl>
+
+<li><dt>Figure 14-1</dt><dd>Recreation of Figure14-1 in this chapter.</dd></li>
+<button class="HWbuttons" onclick="openDiv('Figure14-1Code');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 14/Figure14-1.html');">Open Page</button></li>
+<div id="Figure14-1Code" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtFigure 14-1&lt/title&gt</br>
+&ltscript&gt</br>
+function ShowStudent(){</br>
+	var Student = {"StudentID" : "12345", "Name" : "Smith", "GPA" : "3.5" };</br>
+	alert("Student: " + Student.StudentID + " " + Student.Name + " " + Student.GPA);</br>
+	}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody onload="ShowStudent();"&gt</br>
+
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>Figure 14-3</dt><dd>Recreation of Figure14-3 in this chapter.</dd></li>
+<button class="HWbuttons" onclick="openDiv('Figure14-3Code');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 14/Figure14-3.html');">Open Page</button></li>
+<div id="Figure14-3Code" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtFigure 14-3&lt/title&gt</br>
+&ltscript&gt</br>
+var Companies = [{"Name" : "Microsoft", "Founder" : "Gates and Allen", "Headquarters" : "Redmond, WA"},</br>
+				 {"Name" : "Facebook", "Founder" : "Zuckerberg", "Headquarters" : "Palo Alto, CA"},</br>
+				 {"Name" : "Oracle", "Founder" : "Ellison", "Headquarters" : "Redwood Shores, CA"}];</br>
+	function InitButtons(){</br>
+			var i;</br>
+			var currentHTML;</br>
+			for (i=0;i&ltCompanies.length; i++){</br>
+				currentHTML = document.getElementById("Page").innerHTML;</br>
+				document.getElementById("Page").innerHTML = currentHTML + "&ltbutton onclick='ShowCompany("+ i +")'&gt" + Companies[i].Name + "&lt/button&gt"</br>
+			}</br>
+		}</br>
+	function ShowCompany(i){</br>
+			alert("Founder: "+ Companies[i].Founder + " Headquarters: " + Companies[i].Headquarters);</br>
+		}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody id ="Page" onload="InitButtons();"&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+<li><dt>JSON Dog</dt><dd>Uses JSON to create a Dog object and then dislplays it's information through an alert.</dd></li>
+<button class="HWbuttons" onclick="openDiv('JSONDogCode');"> Hide/Show Code</button>	<button class="HWbuttons" onclick="window.open('Chapter 14/JSONDog.html');">Open Page</button></li>
+<div id="JSONDogCode" class="innerSlides" style="clear:left;"><dd>
+&lt!DOCTYPE html&gt</br>
+&lthtml&gt</br>
+&lthead&gt</br>
+&lttitle&gtJSON Dog&lt/title&gt</br>
+&ltscript&gt</br>
+var Dog = {"Name" : "Chester", "Age" : " 7", "Breed" : "German Shepard"};</br>
+function Display(){</br>
+			alert("Name: "+ Dog.Name+ " Age: " + Dog.Age + " Breed: " + Dog.Breed);</br>
+}</br>
+&lt/script&gt</br>
+&lt/head&gt</br>
+&ltbody id ="Page" onload="Display();"&gt</br>
+&lt/body&gt</br>
+&lt/html&gt
+
+</dd>
+</div>
+
+</dl></ul></div>
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+</body>
+</html>

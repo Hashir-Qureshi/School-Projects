@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sliding Photo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+function slide(image){
+	$(image).animate({left:'700px'}, 3000, function () {slideBack(image)});
+	}
+
+function slideBack(image){
+	$(image).animate({left:'10px'}, 3000, function () {slide(image)});
+	}
+</script>
+</head>
+<body onload="slide('#image')">
+<img id="image" style="left:10px; position:absolute;" src="http://www.websitedevelopmentbook.com/chapter12/dog.jpg"/>
+</body>
+</html>
