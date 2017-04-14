@@ -5,6 +5,6 @@ The website is in the "Muhammad Qureshi Project" folder. Double click homepage.h
 
 ----------------MONTE CARLO SIMULATION----------------
 You will need an IDE that supports Java to launch the program.
-Import the TriviaCrack Stat Java folder into t=the IDE. Run the main class TriviaCrack_Stat.
+Import the "TriviaCrack Stat Java" folder into the IDE and run the main class TriviaCrack_Stat.
 
 
